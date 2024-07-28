@@ -1,4 +1,4 @@
-const token = 'ghp_6OQjjL5HaSAtY8NgGfH0OL465CMJao2Zqkns';
+const token = 'ghp_LKgZyWaNVvToLBZBR2xhTV773YGqwy1GrX8L';
 const username = 'ahed0programer';
 const repo = 'ahed_data_logs';
 const path = 'data.json';
