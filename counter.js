@@ -32,7 +32,6 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=33e678296dca4b33b1e407b2d221c46
 
         
 
-
 async function getFileContentAndSHA() {
     const response = await fetch(`https://api.github.com/repos/${username}/${repo}/contents/${path}`, {
         method: 'GET',
