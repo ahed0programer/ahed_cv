@@ -1,4 +1,4 @@
-const token = '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';
+const token = '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';
 const username = 'ahed0programer';
 const repo = 'ahed_data_logs';
 const path = 'data.json';
@@ -31,6 +31,7 @@ fetch('https://api.ipgeolocation.io/ipgeo?apiKey=33e678296dca4b33b1e407b2d221c46
 });
 
         
+
 
 async function getFileContentAndSHA() {
     const response = await fetch(`https://api.github.com/repos/${username}/${repo}/contents/${path}`, {
