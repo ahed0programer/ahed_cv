@@ -1,0 +1,22 @@
+.proj-img{
+    margin: 20px 10px;
+}
+
+.proj-img img.mobile{
+    width: 150px;
+}
+
+.proj-img img:hover {
+    cursor: pointer;
+}
+
+.proj-img img.web{
+    width: 250px;
+}
+
+.show img{
+    display: none;
+}
+.show img.active {
+    display: block;
+}
