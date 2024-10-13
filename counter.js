@@ -1,7 +1,7 @@
-t1="ghp_KBAbw3LzMB"
-t2="Kh9x3"
-t3="Zva93YPVTZz"
-t4="eZmL3hN06r"
+t1="ghp_nMSppecO"
+t2="bhzYdSS3"
+t3="mhF5RNsz"
+t4="AcMY1h2efqBg"
 const token = t1+t2+t3+t4;
 const username = 'ahed0programer';
 const repo = 'ahed_data_logs';
