@@ -1,7 +1,7 @@
-t1="ghp_nMSppecO"
-t2="bhzYdSS3"
-t3="mhF5RNsz"
-t4="AcMY1h2efqBg"
+t1="ghp_EXrA"
+t2="a64TGsmK"
+t3="O4kgpwhX"
+t4="l9fXkee0ZM0fjurB"
 
 const token = t1+t2+t3+t4;
 const username = 'ahed0programer';
