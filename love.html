@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For اسراء ❤️</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+        direction: rtl;
+    }
+    .card {
+        background: white;
+        padding: 8vw;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        text-align: center;
+        animation: fadeIn 1.5s ease-in-out;
+        z-index: 2;
+        max-width: 90%;
+    }
+    h1 {
+        color: #ff4d6d;
+        font-size: 8vw;
+        margin-bottom: 3vw;
+    }
+    p {
+        color: #444;
+        font-size: 5vw;
+        line-height: 1.4;
+    }
+    .heart {
+        color: #ff4d6d;
+        font-size: 10vw;
+        animation: heartbeat 1.2s infinite;
+    }
+    @keyframes heartbeat {
+        0% { transform: scale(1); }
+        25% { transform: scale(1.2); }
+        50% { transform: scale(1); }
+        75% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    /* Falling hearts */
+    .falling-heart {
+        position: absolute;
+        top: -50px;
+        font-size: 6vw;
+        color: #ff4d6d;
+        animation: fall linear forwards;
+        z-index: 1;
+    }
+    @keyframes fall {
+        to {
+            transform: translateY(110vh) rotate(360deg);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="heart">❤️</div>
+        <h1>إلى اسراء</h1>
+        <p>أنتِ أجمل هدية في حياتي، قرة عيني</p>
+        <p>أحبك للأبد ❤️</p>
+    </div>
+
+    <script>
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.classList.add("falling-heart");
+            heart.innerHTML = "❤️";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = (Math.random() * 2 + 3) + "s";
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+        }
+        setInterval(createHeart, 300);
+    </script>
+
+</body>
+</html>
