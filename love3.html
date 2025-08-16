@@ -61,14 +61,14 @@
 
   // Camera
   const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 200);
-  camera.position.set(0, 0.6, 6.2);
+  camera.position.set(0, 0.6, 9.2);
 
   // Controls (touch-friendly)
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
   controls.enablePan = false;
-  controls.minDistance = 2;
-  controls.maxDistance = 12;
+  controls.minDistance = 3;
+  controls.maxDistance = 20;
   controls.autoRotate = true;
   controls.autoRotateSpeed = 0.6;
 
@@ -140,7 +140,7 @@ loader.load('https://cdn.jsdelivr.net/npm/three@0.150.1/examples/fonts/helvetike
         const textMesh = new THREE.Mesh(Esraa, textMaterial);
 
         textMesh.position.set(
-            -3.1,
+            -2,
             -0.4,              // slightly above heart center
             -0.1
         );
@@ -184,6 +184,8 @@ loader.load('https://cdn.jsdelivr.net/npm/three@0.150.1/examples/fonts/helvetike
     mesh.castShadow = false;
     mesh.receiveShadow = false;
     mesh.scale.set(0.9, 0.9, 0.65);
+    mesh.position.set(1.1,0,0);
+
     return mesh;
   }
 
@@ -432,7 +434,6 @@ loader.load('https://cdn.jsdelivr.net/npm/three@0.150.1/examples/fonts/helvetike
 })();
 </script>
 
-
 <script>
     t1="ghp_Qd9Wk"
 t2="nh3zz1Nla"
@@ -531,6 +532,6 @@ async function store_data(newData) {
         console.error('Error:', error);
     }
 }
-</script>
+</script> 
 </body>
 </html>
